@@ -1,0 +1,118 @@
+/* count down timer sytle start here */
+
+/* Sets the containers height and width */
+#day{
+
+  height: 110px;
+  width: 110px;
+  float:  left;
+}
+
+#hour{
+  margin-left: 200px;
+  height: 110px;
+  width: 110px;
+}
+#minutes{
+  margin-top: -110px;
+  margin-left: 400px;
+  height: 110px;
+  width: 110px;
+}
+
+#seconds{
+  margin-top: -110px;
+  margin-left: 600px;
+  height: 110px;
+  width: 110px;
+}
+
+
+
+/* Removes SVG styling that would hide the time label */
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+/* The SVG path that displays the timer's progress */
+.base-timer__path-elapsed {
+  stroke-width:2.1px !important;
+  stroke: #eee !important;
+  color: blue !important;
+  background: blue !important;
+}
+
+svg{
+  /*border: solid; */
+}
+
+.base-timer__label{
+position: absolute;
+
+  /* Size should match the parent container */
+  width: 110px;
+  height: 110px;
+
+  /* Keep the label aligned to the top */
+top: 220px;
+  /* Create a flexible box that centers content vertically and horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Sort of an arbitrary number; adjust to your liking */
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.base-timer__path-remaining {
+  /* Just as thick as the original ring */
+  stroke-width: 4px;
+
+  /* Rounds the line endings to create a seamless circle */
+  stroke-linecap: round;
+
+  /* Makes sure the animation starts at the top of the circle */
+  transform: rotate(270deg);
+  transform-origin: center;
+
+  /* One second aligns with the speed of the countdown timer */
+  transition: 1s linear all;
+  /* fill-rule: nonzero; */
+  /* Allows the ring to change color when the color value updates */
+  stroke: currentColor;
+
+}
+
+.base-timer__path-remaining.orange {
+  color: rgb(240,79,45);
+}
+.base-timer__path-remaining.gold {
+  color: gold;
+}
+.base-timer__path-remaining.green {
+  color: green;
+}
+
+.base-timer__path-remaining.yellow {
+  color: yellow;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__svg {
+  /* Flips the svg and makes the animation to move left-to-right */
+  transform: scaleX(-1);
+}
+.base-timer p{
+  margin-top: -5px;
+  text-align:center;
+}
+
+#app{
+  margin-left: 20px;
+}
+/* count down timer sytle ends here */
