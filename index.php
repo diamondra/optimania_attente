@@ -2,8 +2,11 @@
 <html>
 <head>
 <title>Optimania</title>
+<meta charset="utf-8">
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/bootstrap.css">
+<link href="css/bootstrap.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
 <script src="js/jquery.ui.min.js" type="text/javascript"></script>
 <link href="font-awesome-4.7.0/css/font-awesome.min.css"  rel="stylesheet"  type='text/css'>
@@ -27,7 +30,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
                 <div>
-                    <div>
+                    <div class="animated slideFromTop div-logo">
                         <img class="logo" src="images/logo.png" width='100%'/>
                     </div>
                     <div class="mt-15">
@@ -112,7 +115,7 @@
                         <p><i class="fa fa-check-circle check" aria-hidden="true"> </i> Plus de temps <b>avec vos enfants</b></p>
                         <p><i class="fa fa-check-circle check" aria-hidden="true"> </i> Plus de temps <b>avec vos amis</b></p>
                         <p><i class="fa fa-check-circle check" aria-hidden="true"> </i> Plus de temps <b>de loisir</b></p>
-                        <p><i class="fa fa-check-circle check" aria-hidden="true"> </i> Bref plus de temps <b>pour VOUS</b></p>
+                        <p><i class="fa fa-check-circle check" aria-hidden="true"> </i> Bref plus de temps <b>pour  VOUS</b></p>
                     </div>
                     <div class="mt-45-mb-25 align-center"><b>"L'équilibre vie privée - vie pro"</b></div>
                     <div>
@@ -121,6 +124,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
                 <div class="box-form-contact">
                     <div class="parlons-en"> 
@@ -128,64 +132,67 @@
                         <p>Merci d’envoyer votre e-mail.</p>
                     </div>
                     <div class="form-contact">
-                    <form>
-                        <div class="form-group">
+                        <form id="formId" action="send_mail.php">
                             <div class="row">
                                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd-right-5">
-                                    <input class="form-control" type="text" placeholder="Nom"/>
+                                    <div class="form-group required">
+                                        <input class="form-control" type="text" placeholder="Nom" name="nom" id="nom" required/>
+                                    </div>
                                 </div>
                                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd-left-5">
-                                    <input class="form-control" type="text" placeholder="Prénom"/>
+                                    <div class="form-group required">
+                                        <input class="form-control requiredFieldWrapper" type="text" name="prenom" id="prenom" placeholder="Prénom" required/>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" type="email" placeholder="Email"/>
-                        </div>    
-                        <div class="form-group">
-                            <input class="form-control" type="text" placeholder="N° Téléphone "/>
-                        </div>
-                        <div class="box-optimania-info">
-                            Optimania collecte et traite vos données personnelles aux fins de 
-                            (i) répondre à vos demandes de mise en contact et/ou de (ii) vous faire parvenir des informations sur nos services, notre actualité.
-                            Veuillez prendre connaissance de notre Politique de confidentialité.
-                        </div>
-                        <div class="send-form-contact-btn">
-                            <input class="form-control btn btn-info btn-send" type="text" type="button" value='Envoyer'/>
-                        </div>
-                        <div class="box-video">
-                            <video width="100%" height="100%"controls="controls"/>
-                                <source src="videos/Plaquette_OPTIMANIA.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="box-solutions">
-                            <button class="btn btn-solutions">Voir toutes nos solutions</button>
-                        </div>
+                            <div class="form-group required">
+                                <input class="form-control" type="email" placeholder="Email" name="email" id="email" required/>
+                            </div>  
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="N° Téléphone" name="phone" id="phone"/>
+                            </div>
+                            <div class="box-optimania-info">
+                                Optimania collecte et traite vos données personnelles aux fins de 
+                                (i) répondre à vos demandes de mise en contact et/ou de (ii) vous faire parvenir des informations sur nos services, notre actualité.
+                                Veuillez prendre connaissance de notre Politique de confidentialité.
+                            </div>
+                            <div class="send-form-contact-btn">
+                                <button type="submit" class="form-control btn btn-info btn-send">Envoyer</button>
+                            </div>
+                            <div class="box-video">
+                                <video width="100%" height="100%"controls="controls"/>
+                                    <source src="videos/Plaquette_OPTIMANIA.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="box-solutions">
+                                <button class="btn btn-solutions">Voir toutes nos solutions</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 ">
                 <div>
-                    <div class="phone-mail-div">
+                    <div class="phone-mail-div slideInRight animated">
                         <div class="flex">
                             <div><i class="fa fa-phone-square"></i></div>
                             <div class="ml-10">+33 62 87 22 937</div>
                         </div>
                         <div class="flex">
                             <div><i class="fa fa-envelope-square"></i></div>
-                            <div class="ml-10"> contact@optiamania.fr</div>
+                            <div class="ml-10"> contact@optimania.fr</div>
                         </div>
                     </div>
-                    <div class="box-icon-reseaux-sociaux">
+                    <div class="box-icon-reseaux-sociaux slideInRight animated">
                         <div class="flex-space-evenly">
                             <div class="div-reseau">
-                                <span><i class="fa fa-facebook"></i></span>
+                                <a><i class="fa fa-facebook"></i></a>
                             </div>
                             <div class="div-reseau">
-                                <span><i class="fa fa-linkedin-square"></i></span>
+                                <a><i class="fa fa-linkedin"></i></a>
                             </div>
                             <div class="div-reseau">
-                                <span><i class="fa fa-whatsapp"></i></span>
+                                <a><i class="fa fa-whatsapp"></i></a>
                             </div>
                         </div>
                     </div>
@@ -194,5 +201,38 @@
         </div>
     </div>
 </div>
+<footer class="footer-distributed">
+    <div class="footer-left">
+        <div class="img-footer">
+            <img class="logo translate-animation" src="images/footer-opt-cta-2-ok.png" width='70%'/>
+        </div>
+        <!-- <p class="footer-company-name">Optimania © 2022</p> -->
+    </div>
+
+    <div class="footer-center">
+        <p class="contact">Contact</p>
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>95 rue de Wazemmes</span>  59000 Lille - France</p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+33 62 87 22 937</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:contact@optiamania.fr">contact@optimania.fr</a></p>
+        </div>
+    </div>
+
+    <div class="footer-right">
+        <p class="suivez-nous">Suivez-nous sur</p>
+        <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

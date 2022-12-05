@@ -1,5 +1,18 @@
 $( document ).ready(function() {
+    $("form").submit(function (event) {
+        var formData = {
+            nom: $("#nom").val(),
+            prenom: $("#prenom").val(),
+            email: $("#email").val(),
+            phone: $("#phone").val()
+        };
+        console.log(formData);
+        sendEmail();
+
+        event.preventDefault();
+    });
     function sendEmail() {
+        console.log("hshs");
         Email.send({
             Host : "smtp.elasticemail.com",
             Username : "diamondrastier@gmail.com",
@@ -13,7 +26,7 @@ $( document ).ready(function() {
         );
     }
 
-    doSlideshow();
+    // doSlideshow();
     
     function doSlideshow(){
         $('#content').mkinfinite({
