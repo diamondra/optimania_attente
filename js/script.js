@@ -26,7 +26,7 @@ $( document ).ready(function() {
         );
     }
 
-    // doSlideshow();
+    doSlideshow();
     
     function doSlideshow(){
         $('#content').mkinfinite({
