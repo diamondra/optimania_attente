@@ -516,11 +516,11 @@
   30% { margin-top: 3px; }
 }
 .translate-animation {
-  animation: trans 3s ease infinite;
+  animation: trans 2s ease infinite;
  }
  .footer-left{
   padding-bottom: 10px;
  }
  .value-text-contact{
-  font-size: 20px;
+  font-size: 18px;
  }
