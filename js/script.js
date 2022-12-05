@@ -1,3 +1,6 @@
+function closeModal(){
+    $('#form-success-modal').modal("hide");
+}
 $( document ).ready(function() {
     $("form").submit(function (event) {
         var formData = {
@@ -5,24 +8,41 @@ $( document ).ready(function() {
             prenom: $("#prenom").val(),
             email: $("#email").val(),
             phone: $("#phone").val()
-        };
-        console.log(formData);
-        sendEmail();
+        };        
 
+        sendEmail(formData);
         event.preventDefault();
     });
-    function sendEmail() {
-        console.log("hshs");
+    
+    function sendEmail(formData) {
         Email.send({
             Host : "smtp.elasticemail.com",
             Username : "diamondrastier@gmail.com",
             Password : "EC57BFD7896B53DAA78D48C4085CCE5B3BD8",
-            To : 'diamondrastier@gmail.com',
+            To : formData.email,
             From : "diamondrastier@gmail.com",
             Subject : "Test email",
-            Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+            Body : `
+            <html>
+                <h2>Demande d'informations</h2>
+                <div>
+                    <div>
+                        <p>Nom: ${formData.nom}</p>
+                        <p>Prénom: ${formData.prenom}</p>
+                        <p>Email: ${formData.email}</p>
+                        <p>Téléphone: ${formData.phone}</p>
+                    </div>
+                </div>
+            </html>
+            `
         }).then(
-          message => alert(message)
+            function(){
+                $('#form-success-modal').modal("show");
+                $("#nom").val('');
+                $("#prenom").val('');
+                $("#email").val('');
+                $("#phone").val('');
+            }
         );
     }
 

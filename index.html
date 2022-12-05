@@ -6,8 +6,6 @@
 <link rel="stylesheet" href="css/style.css">
 <link href="css/bootstrap.css" rel="stylesheet">
 <script src="js/bootstrap.bundle.min.js"></script>
-
-
 <script src="js/jquery.ui.min.js" type="text/javascript"></script>
 <link href="font-awesome-4.7.0/css/font-awesome.min.css"  rel="stylesheet"  type='text/css'>
 <script type="text/javascript" src="js/jquery.mkinfinite.js"></script>
@@ -19,6 +17,29 @@
 
 </head>
 <body>
+<div class="modal" id="form-success-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body modal-form-contact">
+            <button type="button" class="close" data-dismiss="modal" onclick="closeModal()">&times;</button>
+            <div class="logo-modal">
+                <img class="" src="images/logo_slogan.png" width='100%'/>
+                <h4 class="merci-modal">MERCI !</h4>
+                <div class="content-modal-form">
+                    <p>Votre demande a bien été enregistrée.</p>
+                    <p>Nous nous ferons plaisir de vous contacter sous 48h pour en parler.</p>
+                </div>
+                <div class="suivez-nous-modal">
+                    <p>Suivez-nous sur</p>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
 <div class="main-container" id="content">
     <div class="container-opt">
         <div class="row">
@@ -103,13 +124,13 @@
                     </div>
                 </div>
                 <div class="align-start">
-                    <div class="mt-45-mb-25 align-center"><b>Dirigeants et chefs d'entreprise </b></div>
+                    <div class="mt-45-mb-25 ml-2rem title-list"><b>Dirigeants et chefs d'entreprise </b></div>
                     <div>
                         <p><i class="fa fa-minus-circle stop" aria-hidden="true"> </i> Fini les journées de travail en rallonge</p>
                         <p><i class="fa fa-minus-circle stop" aria-hidden="true"> </i> Fini les semaines de plus de 70h</p>
                         <p><i class="fa fa-minus-circle stop" aria-hidden="true"> </i> Fini les week-end de travail</p>
                     </div>
-                    <div class="mt-45-mb-25 align-center"><b>Il est temps d'agir pour: </b></div>
+                    <div class="mt-45-mb-25 ml-2rem title-list"><b>Il est temps d'agir pour: </b></div>
                     <div>
                         <p><i class="fa fa-check-circle check" aria-hidden="true"> </i> Plus de temps <b>en famille</b></p>
                         <p><i class="fa fa-check-circle check" aria-hidden="true"> </i> Plus de temps <b>avec vos enfants</b></p>
@@ -117,7 +138,7 @@
                         <p><i class="fa fa-check-circle check" aria-hidden="true"> </i> Plus de temps <b>de loisir</b></p>
                         <p><i class="fa fa-check-circle check" aria-hidden="true"> </i> Bref plus de temps <b>pour  VOUS</b></p>
                     </div>
-                    <div class="mt-45-mb-25 align-center"><b>"L'équilibre vie privée - vie pro"</b></div>
+                    <div class="mt-45-mb-25 ml-2rem title-list"><b>"L'équilibre vie privée - vie pro"</b></div>
                     <div>
                         <div class="flex cbon"><img src="images/facebook-thumbs.png" class="thumb"/><p class="text-thumb">C'est bon pour votre santé</p></div>
                         <div class="flex cbon"><img src="images/facebook-thumbs.png" class="thumb"/><p class="text-thumb">C'est bon pour votre business</p></div>
@@ -132,7 +153,7 @@
                         <p>Merci d’envoyer votre e-mail.</p>
                     </div>
                     <div class="form-contact">
-                        <form id="formId" action="send_mail.php">
+                        <form id="formId">
                             <div class="row">
                                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd-right-5">
                                     <div class="form-group required">
@@ -234,5 +255,18 @@
         </div>
     </div>
 </footer>
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Modal header</h3>
+    </div>
+    <div class="modal-body">
+        <p>One fine body…</p>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        <button class="btn btn-primary">Save changes</button>
+    </div>
+</div>
 </body>
 </html>
