@@ -62,10 +62,12 @@ $( document ).ready(function() {
             zoomOut:true,
         });
     }
+    var now = new Date();
+    var dateProm = new Date('12-31-2022 00:00');
     $('.countdown-container').final_countdown({
-        'start': 1362139200,
-        'end': 1388461320,
-        'now': 1387461319,
+        'start': now.getTime() / 1000,
+        'end': dateProm.getTime() / 1000,
+        'now': now.getTime() / 1000,
         'seconds': {
             borderColor: '#ffc000',
             borderWidth: '6'
