@@ -175,12 +175,12 @@
                 <div>
                     <div class="phone-mail-div slideInRight animated">
                         <div class="flex">
-                            <div><i class="fa fa-phone-square"></i></div>
-                            <div class="ml-10">+33 62 87 22 937</div>
+                            <div><i class="fa fa-phone phone-mail"></i></div>
+                            <div class="ml-10 value-text-contact">+33 62 87 22 937</div>
                         </div>
                         <div class="flex">
-                            <div><i class="fa fa-envelope-square"></i></div>
-                            <div class="ml-10"> contact@optimania.fr</div>
+                            <div><i class="fa fa-envelope"></i></div>
+                            <div class="ml-10 value-text-contact"> contact@optimania.fr</div>
                         </div>
                     </div>
                     <div class="box-icon-reseaux-sociaux slideInRight animated">

@@ -166,7 +166,11 @@
   justify-content: space-evenly;
 }
 .phone-mail-div{
- margin: 1rem 0;
+ margin: 3rem 0;
+}
+.phone-mail-div i{
+  font-size: 30px;
+  color: #ffc000;
 }
 .ml-10{
   margin-left: 10px;
@@ -492,6 +496,21 @@
   margin-right: 3px;
   margin-bottom: 5px;
 }
+
+.phone-mail-div i{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #ffc000;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #00363e;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 10px;
+}
 @keyframes trans {
   1% { margin-top: 0; }
   30% { margin-top: 3px; }
@@ -501,4 +520,7 @@
  }
  .footer-left{
   padding-bottom: 10px;
+ }
+ .value-text-contact{
+  font-size: 20px;
  }
