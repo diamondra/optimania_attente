@@ -9,7 +9,7 @@
   
 body {
   font-family: Lato !important;
-  font-size: 1rem !important;
+  font-size: 18px !important;
 }
   .main-container {
     content: "";
@@ -69,6 +69,8 @@ body {
   .box-optimania-info{
     text-align: start;
     margin-bottom: 25px;
+    font-size: 0.8rem;
+    color: #8d8d8d;
   }
   .send-form-contact-btn{
     width: 40%;
@@ -138,24 +140,33 @@ body {
   margin-bottom: 1rem;
 }
 .box-video {
-  margin-top: 2.5rem;
+  margin-top: 4rem;
 }
-.btn-solutions, .btn-plus{
+.btn-plus{
   border-radius: 35px !important;
   background: #25b5b6 !important;
   border-color: #25b5b6 !important;
   font-weight: 500 !important;
   color: white;
 }
+.btn-solutions{
+  width: 100%;
+  white-space: break-spaces !important;
+  padding: 0.5rem 2rem !important;
+  border-radius: 35px !important;
+  background: #fcc401 !important;
+  border-color: #fcc401 !important;
+  font-weight: 500 !important;
+  color: white;
+  /* animation: hideshowclock 4s ease infinite; */
+}
 .box-solutions{
   margin-top: .5rem;
   margin-bottom: .5rem;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 .parlons-en{
   font-weight: bold;
-  padding: 0.5rem 2rem;
+  padding-bottom: .5rem;
 }
 .space-around{
   align-items: center;
@@ -192,8 +203,17 @@ body {
   50% { opacity: 0.8; }
   100% { opacity: 0.2; }
 }
+
+@keyframes hideshowclock {
+  0% { opacity: 1; }
+  10% { opacity: 1; }
+  20% { opacity: 1; }
+  80% { opacity: 0.2; }
+  100% { opacity: 0.2; }
+}
 .btn-send {
  animation: hideshow 4s ease infinite;
+ font-weight: bold !important;
 }
 .img-promotion {
   animation: hideshow 1.5s ease infinite;
@@ -216,6 +236,7 @@ body {
   padding-bottom: 100%;
   position: relative;
   width: 100%;
+  animation: hideshowclock 2s ease infinite;
 }
 .clock-canvas {
   background-color: rgba(255, 255, 255, .1);
@@ -311,7 +332,7 @@ body {
 }
 
 .footer-distributed{
-	background: #1a363c;
+	background: #ffc000;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -371,16 +392,16 @@ body {
 }
 
 .footer-distributed .footer-center i{
-	background-color:  #23474e;
-	color: #ffc000;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
+	background-color: #ffffff;
+  color: #ffc000;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
 }
 
 .footer-distributed .footer-center i.fa-envelope{
@@ -404,8 +425,8 @@ body {
 }
 
 .footer-distributed .footer-center p a{
-	color:  lightseagreen;
-	text-decoration: none;;
+  color: white;
+  text-decoration: underline;
 }
 
 .footer-distributed .footer-links a:before {
@@ -450,17 +471,17 @@ body {
 
 .footer-distributed .footer-icons a, .modal-form-contact a{
 	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #22a7a4;
-	border-radius: 2px;
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-	margin-right: 3px;
-	margin-bottom: 5px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffc000;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
@@ -529,7 +550,7 @@ body {
 }
 .translate-animation {
   animation: trans 2s ease infinite;
- }
+}
  .footer-left{
   padding-bottom: 10px;
  }
@@ -541,7 +562,7 @@ body {
  }
  .modal-form-contact{
   text-align: center;
-  border: 4px solid #1d918e;
+  border: 4px solid #26b7b4;
  }
  .suivez-nous-modal{
   border-top: 4px solid #26b7b4;
@@ -553,4 +574,17 @@ body {
  }
  .content-modal-form{
   padding: 1rem 4rem;
+ }
+ .img-footer {
+  padding-top: 10px;
+ }
+ .plus-de-temps {
+  color: #26b7b4;
+  animation: hideshowclock 3s ease infinite;
+ }
+ .parlons-en-txt{
+  margin-bottom: .5rem;
+ }
+ .check, .stop, .cbon{
+  margin-right: 5px;
  }
