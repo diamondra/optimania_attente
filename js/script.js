@@ -4,9 +4,8 @@ function closeModalForm(){
     $('#form-success-modal').modal("hide");
 }
 function closeModalPromo(){
-    console.log(closeNumber);
+    $('#promo-modal').modal("hide");
     if(closeNumber == 0){
-        $('#promo-modal').modal("hide");
         setTimeout(() => {
             $('#promo-modal').modal("show");
             closeNumber ++;
