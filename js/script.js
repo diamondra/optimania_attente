@@ -2,9 +2,10 @@ let closeNumber = 0;
 
 document.addEventListener("readystatechange", (event) => {
     if (event.target.readyState === "interactive") {
-        console.log("interactive")
     } else if (event.target.readyState === "complete") {
-        console.log("complete")
+        setTimeout(() => {
+            $('#promo-modal').modal("show");
+        }, 5000)
     }
 });
 
@@ -103,10 +104,5 @@ $( document ).ready(function() {
             borderColor: '#26b7b4',
             borderWidth: '6'
         }
-    });
-    
-    setTimeout(() => {
-        $('#promo-modal').modal("show");
-    }, 5000)
-      
+    });  
 });
