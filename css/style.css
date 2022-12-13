@@ -646,3 +646,7 @@ body {
   transform: scale(1)!important;
   transform:none;
 }
+.plus-que {
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+}
