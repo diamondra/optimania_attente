@@ -1,5 +1,13 @@
 let closeNumber = 0;
 
+document.addEventListener("readystatechange", (event) => {
+    if (event.target.readyState === "interactive") {
+        console.log("interactive")
+    } else if (event.target.readyState === "complete") {
+        console.log("complete")
+    }
+});
+
 function closeModalForm(){
     $('#form-success-modal').modal("hide");
 }
@@ -9,7 +17,7 @@ function closeModalPromo(){
         setTimeout(() => {
             $('#promo-modal').modal("show");
             closeNumber ++;
-        }, 10000)
+        }, 7000)
     }
 }
 $( document ).ready(function() {
