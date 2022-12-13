@@ -284,6 +284,12 @@ body {
   margin-top: 3rem !important;
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .row-container{
+    flex-direction: column-reverse !important;
+  }
+  .box-icon-reseaux-sociaux{
+    display: none !important;
+  }
   #promo-modal.show .modal-dialog{
     margin-left: 25% !important;
     width: 50% !important;
@@ -299,6 +305,12 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .row-container{
+    flex-direction: column-reverse !important;
+  }
+  .box-icon-reseaux-sociaux{
+    display: none !important;
+  }
   #promo-modal.show .modal-dialog{
     margin-left: 25% !important;
     width: 50% !important;
