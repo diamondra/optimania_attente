@@ -211,6 +211,9 @@ body {
   font-size: 30px;
   color: #ffc000;
 }
+.row-countdown{
+  margin-bottom: 4rem;
+}
 .ml-10{
   margin-left: 10px;
 }
@@ -284,6 +287,9 @@ body {
   margin-top: 3rem !important;
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .row-countdown{
+    margin-bottom: 0 !important;
+  }
   .row-container{
     flex-direction: column-reverse !important;
   }
@@ -295,7 +301,7 @@ body {
     width: 50% !important;
   }
   .clock-item {
-    margin-bottom:4rem;
+    margin-bottom:2rem;
   }
   .text .type-time {
     padding-top: 4rem !important;
@@ -305,6 +311,9 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .row-countdown{
+    margin-bottom: 0 !important;
+  }
   .row-container{
     flex-direction: column-reverse !important;
   }
