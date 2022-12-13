@@ -1,5 +1,17 @@
-function closeModal(){
+let closeNumber = 0;
+
+function closeModalForm(){
     $('#form-success-modal').modal("hide");
+}
+function closeModalPromo(){
+    console.log(closeNumber);
+    if(closeNumber == 0){
+        $('#promo-modal').modal("hide");
+        setTimeout(() => {
+            $('#promo-modal').modal("show");
+            closeNumber ++;
+        }, 10000)
+    }
 }
 $( document ).ready(function() {
     $("form").submit(function (event) {
@@ -85,4 +97,9 @@ $( document ).ready(function() {
             borderWidth: '6'
         }
     });
+    
+    setTimeout(() => {
+        $('#promo-modal').modal("show");
+    }, 5000)
+      
 });

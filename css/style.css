@@ -588,3 +588,41 @@ body {
  .check, .stop, .cbon{
   margin-right: 5px;
  }
+ .modal.fade .modal-dialog{
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0);
+}
+
+.zoom-in {
+  transform: scale(0)!important;
+  opacity: 0;
+  -webkit-transition: 1.5s all 0s;
+  -moz-transition: 1.5s all 0s;
+  -ms-transition: 1.5s all 0s;
+  -o-transition: 1.5s all 0s;
+  transition: 1.5s all 0s;
+  display: block !important;
+}
+
+.zoom-in.show {
+  opacity: 1;
+  transform: scale(1)!important;
+  transform:none;
+}
+#promo-modal .modal-content{
+  background: #ffffff00 !important;
+  border: solid 1px #f3b134!important;
+}
+#promo-modal .modal-header{
+  border-bottom: none;
+  padding: 10px 15px;
+}
+#promo-modal.show .modal-dialog{
+  margin-left: 1rem !important;
+  width: 20% !important;
+}
+.promo-modal-close{
+  font-size: 2rem;
+  color: white !important;
+  opacity: 1 !important;
+}
