@@ -83,7 +83,7 @@ $( document ).ready(function() {
         });
     }
     var now = new Date();
-    var dateProm = new Date('12-31-2022 00:00');
+    var dateProm = new Date('2022-12-31T00:00:00');
     $('.countdown-container').final_countdown({
         'start': now.getTime() / 1000,
         'end': dateProm.getTime() / 1000,
