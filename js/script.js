@@ -83,7 +83,7 @@ $( document ).ready(function() {
         });
     }
     var now = new Date();
-    var dateProm = new Date('2022-12-31T00:00:00');
+    var dateProm = new Date('2023-01-13T22:10:00'.replace(/\s/, 'T'));
     $('.countdown-container').final_countdown({
         'start': now.getTime() / 1000,
         'end': dateProm.getTime() / 1000,
