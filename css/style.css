@@ -159,9 +159,10 @@ body {
 .box-video {
   margin-top: 4rem;
 }
-/* video{
-  background-image: url('../images/preview.JPG');
-} */
+video{
+  background-image: url('../images/preview.jpeg');
+  border: solid 1px #fcc401;
+}
 .btn-plus{
   border-radius: 35px !important;
   background: #25b5b6 !important;
