@@ -159,9 +159,9 @@ body {
 .box-video {
   margin-top: 4rem;
 }
-video{
+/* video{
   background-image: url('../images/preview.JPG');
-}
+} */
 .btn-plus{
   border-radius: 35px !important;
   background: #25b5b6 !important;
