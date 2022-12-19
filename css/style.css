@@ -161,6 +161,8 @@ body {
 }
 video{
   background-image: url('../images/preview.jpeg');
+  background-position: center center;
+  background-size: contain;
   border: solid 1px #fcc401;
 }
 .btn-plus{
