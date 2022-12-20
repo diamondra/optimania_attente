@@ -69,7 +69,7 @@ body {
   text-align: center;
 }
 .upper-yellow {
-  color: #f3b134;
+  color: #ffc000;
   text-transform: uppercase;
   font-family: League-spartan !important;
 }
@@ -309,7 +309,7 @@ video {
   position: absolute;
   top: 50%;
   text-align: center;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); */
   width: 100%;
 }
 .text .val {
@@ -317,7 +317,7 @@ video {
 }
 .text .type-time {
   font-size: 13px;
-  color: #ffd554;
+  color: #ffc000;
   padding-top: 40% !important;
 }
 .countdown-container {
