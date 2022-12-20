@@ -28,7 +28,6 @@ body {
   left: 0;
   right: 0;
   bottom: 50%;
-  border: 1px solid;
   -webkit-transform: translateY(50%);
   -moz-transform: translateY(50%);
   -ms-transform: translateY(50%);
@@ -86,6 +85,8 @@ body {
 .white {
   color: white;
   margin-bottom: 5px;
+  font-size: x-large;
+  line-height: 1.5;
   font-family: League-spartan !important;
 }
 .box-form-contact {
@@ -133,7 +134,7 @@ body {
   margin-bottom: 25px;
 }
 .mt-45-mb-25 b {
-  font-size: large;
+  font-size: 25px;
 }
 .align-start {
   text-align: start;
@@ -304,7 +305,7 @@ video {
   color: #fff;
   font-size: 30px;
   font-weight: bold;
-  margin-top: -25px;
+  margin-top: -20px;
   position: absolute;
   top: 50%;
   text-align: center;
@@ -714,4 +715,15 @@ video {
 }
 .title-p {
   color: #ffc000;
+  font-size: larger;
+}
+.mt-2rem {
+  margin-top: 2rem;
+}
+.mt-3rem {
+  margin-top: 3rem;
+}
+.mt6-mb6 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }

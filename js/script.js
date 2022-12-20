@@ -91,15 +91,15 @@ $(document).ready(function () {
       borderWidth: "6",
     },
     minutes: {
-      borderColor: "#ECEFCB",
+      borderColor: "#ffc000",
       borderWidth: "6",
     },
     hours: {
-      borderColor: "#ACC742",
+      borderColor: "#ffc000",
       borderWidth: "6",
     },
     days: {
-      borderColor: "#26b7b4",
+      borderColor: "#ffc000",
       borderWidth: "6",
     },
   });
